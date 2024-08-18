@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    background: rgb(135, 188, 209);
+}
+#number{
+    font-size: 120px;
+    color: black;
+    transition: all 0.2s ease-in; 
+    margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    height: 50vh;
+}
+.buttonsContainer .button{
+    padding: 0.75rem 1.2rem;
+    color: white;
+    border: 1px solid #333;
+    margin-right: 1.2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.1s ease-in;
+}
+.buttonsContainer #decreaseBtn{
+    background: rgb(116, 0, 0);
+}
+.buttonsContainer #resetBtn{
+    background: #333;
+}
+.buttonsContainer #increaseBtn{
+    background: rgb(18, 95, 18);
+}
+.buttonsContainer #increaseBtn:hover{
+    background: rgb(56, 148, 56);;
+}
+.buttonsContainer #decreaseBtn:hover{
+    background: rgb(168, 26, 26);;
+}
+.buttonsContainer #resetBtn:hover{
+    background: black;
+}
+
+/* For animation */
+.fade-in{
+    opacity: 1;
+    transform: translateY(20px);
+}
+.fade-out{
+    opacity: 0;
+    transform: translateY(0px);
+}
